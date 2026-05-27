@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de ventas</title>
+    <!-- CSS FLASK -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/ventas.css') }}">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="phone">
+        <!-- HEADER -->
+        <header class="header">
+            <h2>Historial de ventas</h2>
+            <div class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </header>
+        <!-- BARRA SUPERIOR -->
+        <div class="history-topbar">
+            <!-- BOTON VOLVER -->
+            <div class="back-btn" onclick="goHome()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <!-- BUSCADOR -->
+            <input type="text" placeholder="Buscar">
+        </div>
+        <!-- HISTORIAL -->
+        <div class="history-container">
+            <!-- CARD -->
+            <div class="history-card">
+                <img src="{{ url_for('static', filename='img/vasos.png') }}" alt="">
+                <div class="history-info">
+                    <h3>Vasos desechables</h3>
+                    <p>$5000</p>
+                </div>
+                <div class="history-date">
+                    <span>Hoy</span>
+                    <p>Total: $15000</p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="history-card">
+                <img src="{{ url_for('static', filename='img/plato-plano.png') }}" alt="">
+                <div class="history-info">
+                    <h3>Plato plano</h3>
+                    <p>$4500</p>
+                </div>
+                <div class="history-date">
+                    <span>15/05/2026</span>
+                    <p>Total: $9000</p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="history-card">
+                <img src="{{ url_for('static', filename='img/tenedor.png') }}" alt="">
+                <div class="history-info">
+                    <h3>Tenedores</h3>
+                    <p>$3000</p>
+                </div>
+                <div class="history-date">
+                    <span>14/05/2026</span>
+                    <p>Total: $21000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS FLASK -->
+    <script src="{{ url_for('static', filename='js/ventas.js') }}"></script>
+</body>
+</html>

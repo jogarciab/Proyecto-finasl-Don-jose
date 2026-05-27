@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#1d1d1d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* TELEFONO */
+
+.phone{
+    width:320px;
+    height:650px;
+    background:#f3f3f3;
+    border-radius:35px;
+    overflow:hidden;
+    border:5px solid #111;
+}
+
+/* HEADER */
+
+.header{
+    background:black;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header h2{
+    font-size:18px;
+    font-weight:normal;
+}
+
+.cart{
+    font-size:22px;
+}
+
+/* TOPBAR */
+
+.history-topbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+}
+
+/* BOTON */
+
+.back-btn{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.2s;
+    font-size:18px;
+}
+
+.back-btn:hover{
+    background:#d8d8d8;
+}
+
+/* INPUT */
+
+.history-topbar input{
+    flex:1;
+    height:35px;
+    border:none;
+    border-radius:20px;
+    padding:0 15px;
+    background:#e5e5e5;
+    outline:none;
+}
+
+/* CONTENEDOR */
+
+.history-container{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* CARD */
+
+.history-card{
+    background:white;
+    border-radius:12px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN */
+
+.history-card img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    background:#f5f5f5;
+    border-radius:8px;
+}
+
+/* INFO */
+
+.history-info{
+    flex:1;
+}
+
+.history-info h3{
+    font-size:13px;
+    margin-bottom:5px;
+    font-weight:normal;
+}
+
+.history-info p{
+    font-size:12px;
+    color:#555;
+}
+
+/* FECHA */
+
+.history-date{
+    text-align:right;
+}
+
+.history-date span{
+    font-size:11px;
+    color:#777;
+}
+
+.history-date p{
+    font-size:11px;
+    margin-top:5px;
+    font-weight:bold;
+}

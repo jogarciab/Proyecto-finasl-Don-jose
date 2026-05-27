@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="phone">
+        <!-- OVERLAY -->
+        <div class="overlay" id="overlay"></div>
+        <!-- MENU LATERAL -->
+        <div class="sidebar" id="sidebar">
+            <!-- PERFIL -->
+            <div class="profile">
+                <div class="user-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <!-- OPCIONES -->
+            <ul>
+                <!-- REPORTES -->
+                <li onclick="goReportes()">
+                    <i class="fa-regular fa-file"></i>
+                    Reportes
+                </li>
+                <!-- INICIO -->
+                <li onclick="goHome()">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </li>
+                <!-- FACTURACION -->
+                <li onclick="goFacturacion()">
+                    <i class="fa-regular fa-clipboard"></i>
+                    Facturación
+                </li>
+                <!-- BUSCAR -->
+                <li onclick="focusSearch()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Buscar
+                </li>
+                <!-- COMPRAS -->
+                <li onclick="goCompras()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Compras realizadas
+                </li>
+                <!-- HISTORIAL -->
+                <li onclick="goVentas()">
+                    <i class="fa-regular fa-clock"></i>
+                    Historial de ventas
+                </li>
+                <!-- CERRAR SESION -->
+                <li onclick="cerrarSesion()">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Cerrar sesión
+                </li>
+            </ul>
+        </div>
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <!-- MENU -->
+            <div class="menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- BUSCADOR -->
+            <input
+            type="text"
+            placeholder="Buscar"
+            id="searchInput">
+            <!-- CARRITO -->
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+        <!-- PRODUCTOS -->
+        <main class="products">
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/vasos.png') }}" alt="">
+                <h3>Vasos plasticos</h3>
+                <p>15 Unidades</p>
+                <span>$5000</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/plato-hondo.png') }}" alt="">
+                <h3>Plato hondo</h3>
+                <p>10 Unidades</p>
+                <span>$4500</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/plato-plano.png') }}" alt="">
+                <h3>Plato plano</h3>
+                <p>10 Unidades</p>
+                <span>$4500</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/cucharas.png') }}" alt="">
+                <h3>Cucharas</h3>
+                <p>20 Unidades</p>
+                <span>$3000</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/tenedor.png') }}" alt="">
+                <h3>Tenedor</h3>
+                <p>20 Unidades</p>
+                <span>$3000</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/trinchete.png') }}" alt="">
+                <h3>Trinchete</h3>
+                <p>20 Unidades</p>
+                <span>$3000</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/servilletas.png') }}" alt="">
+                <h3>Servilletas</h3>
+                <p>15 Unidades</p>
+                <span>$4000</span>
+            </div>
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/papel.png') }}" alt="">
+                <h3>Papel aluminio</h3>
+                <p>15 Unidades</p>
+                <span>$2000</span>
+            </div>
+            <!-- AGREGAR -->
+            <div class="card add-card">
+                <div class="plus">
+                    +
+                </div>
+                <h3>Agregar Nombre</h3>
+                <p>Agregar Unidades</p>
+                <span>Agregar Precio</span>
+            </div>
+        </main>
+    </div>
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

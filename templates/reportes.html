@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/reportes.css') }}">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="phone">
+        <!-- HEADER -->
+        <header class="header">
+            <h2>Reportes</h2>
+            <div class="cart">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+        </header>
+        <!-- TOPBAR -->
+        <div class="history-topbar">
+            <div class="back-btn" onclick="goHome()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <input type="text" placeholder="Buscar reporte">
+        </div>
+        <!-- CONTENIDO -->
+        <div class="history-container">
+            <div class="history-card">
+                <div class="history-info">
+                    <h3>Ventas del día</h3>
+                    <p>Total vendido hoy</p>
+                </div>
+                <div class="history-date">
+                    <span>Hoy</span>
+                    <p>$150000</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="history-info">
+                    <h3>Producto más vendido</h3>
+                    <p>Vasos plasticos</p>
+                </div>
+                <div class="history-date">
+                    <span>Semana</span>
+                    <p>250 unidades</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/reportes.js') }}"></script>
+</body>
+</html>

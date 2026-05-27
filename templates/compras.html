@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras realizadas</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/compras.css') }}">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="phone">
+        <header class="header">
+            <h2>Compras realizadas</h2>
+            <div class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </header>
+        <div class="history-topbar">
+            <div class="back-btn" onclick="goHome()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <input type="text" placeholder="Buscar compra">
+        </div>
+        <div class="history-container">
+            <div class="history-card">
+                <img src="{{ url_for('static', filename='img/vasos.png') }}" alt="">
+                <div class="history-info">
+                    <h3>Compra #001</h3>
+                    <p>Proveedor: Plasticos SAS</p>
+                </div>
+                <div class="history-date">
+                    <span>Hoy</span>
+                    <p>$50000</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <img src="{{ url_for('static', filename='img/plato-plano.png') }}" alt="">
+                <div class="history-info">
+                    <h3>Compra #002</h3>
+                    <p>Proveedor: Desechables Pro</p>
+                </div>
+                <div class="history-date">
+                    <span>14/05/2026</span>
+                    <p>$80000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/compras.js') }}"></script>
+</body>
+</html>
