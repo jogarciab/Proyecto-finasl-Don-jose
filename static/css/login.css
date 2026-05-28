@@ -19,48 +19,69 @@ height:100vh;
 
 .contenedor{
 
-background:white;
-
-padding:30px;
-
-width:300px;
-
-border-radius:15px;
-
-box-shadow:0 0 10px gray;
+width:320px;
 
 text-align:center;
 
 }
 
+.logo{
+    
+width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 input{
 
-width:100%;
+    width:100%;
 
-padding:12px;
+    padding:15px;
 
-margin:10px 0;
+    margin:12px 0;
 
-border-radius:8px;
+    border-radius:30px;
 
-border:1px solid gray;
+    border: none;
+
+    background: #e5e5e5;
+
+    outline: none;
+
+    font-size: 16px;
+
+    text-align: center;
+
+}
+
+.texto {
+    font-size: 14px;
+
+    margin: 10px 0;
+
+    color: #555;
 
 }
 
 button{
+    margin-top: 15px;
 
-width:100%;
+    padding:12px 30px;
 
-padding:12px;
+    background:#d9d9d9;
 
-background:#2196F3;
+    border: none;
 
-color:white;
+    border-radius: 30px;
 
-border:none;
+    cursor:pointer;
 
-border-radius:8px;
+    font-size: 16px;
 
-cursor:pointer;
+}
 
+button:hover {
+    background:#c5c5c5;
 }
