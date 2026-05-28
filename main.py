@@ -12,13 +12,16 @@ def inicio():
 @app.route("/login", methods=["POST"])
 def login():
 
-    usuario = request.form["usuario"]
-    password = request.form["password"]
+    if request.method == "POST":
+        usuario = request.form.get("usuario")
+        password = request.form.get("password")
 
-    if usuario == "admin" and password == "123":
-        return redirect("/home")
+        if usuario == "admin" and password == "123":
+            return redirect("/home")
+        else:
+            return "Usuario o contraseña incorrectos"
     
-    return "Usuario o contraseña incorrectos"
+    return render_template("login.html")
 
 # PAGINA PRINCIPAL APP
 @app.route("/home")

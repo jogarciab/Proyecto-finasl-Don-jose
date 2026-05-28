@@ -16,17 +16,21 @@ href="{{ url_for('static', filename='css/login.css') }}">
 
 <div class="contenedor">
 
-    <img src="Logo.png" class="Logo">
+    <form method="POST" action="/login">
+    
+        <img src="Logo.png" class="Logo">
 
     
-    <input type="text" placeholder="Rol">
-    <input type="password" placeholder="Contraseña">
+        <input type="text" name="usuario" placeholder="Rol" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
 
-    <div class="texto">¿Olvidaste tu contraseña?</div>
+        <div class="texto">¿Olvidaste tu contraseña?</div>
 
-    <button>Ingresar</button>
+        <button>Ingresar</button>
 
-    <div class="texto">Crea tu cuenta presionando aquí</div>
+        <div class="texto">Crea tu cuenta presionando aquí</div>
+
+    </form>
 
 </div>
 
