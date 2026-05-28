@@ -24,6 +24,13 @@ El sistema incluye:
 
 # Módulos implementados
 
+## Login
+Pagina inicial del sistema
+
+Funciones:
+- Tener acceso limitado al personal
+- Hacer mas seguro el sistema
+- 
 ## Inicio
 Página principal del sistema.
 
