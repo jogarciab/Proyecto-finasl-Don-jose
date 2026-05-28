@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Login Don José</title>
-
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/login.css') }}">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="contenedor">
+  <div class="login-container">
 
-    <form method="POST" action="/login">
-    
-        <img src="Logo.png" class="Logo">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
 
-    
-        <input type="text" name="usuario" placeholder="Rol" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
+    <!-- Formulario -->
+    <form class="login-form">
 
-        <div class="texto">¿Olvidaste tu contraseña?</div>
+      <input type="text" placeholder="Rol">
 
-        <button>Ingresar</button>
+      <input type="password" placeholder="Contraseña">
 
-        <div class="texto">Crea tu cuenta presionando aquí</div>
+      <a href="#" class="forgot-password">
+        ¿Olvidaste tu contraseña?
+      </a>
+
+      <button type="submit">
+        Ingresar
+      </button>
+
+      <a href="#" class="create-account">
+        Crea tu cuenta presionando aquí
+      </a>
 
     </form>
 
-</div>
+  </div>
 
 </body>
 </html>

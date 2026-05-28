@@ -1,30 +1,9 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# PAGINA INICIAL LOGIN
-@app.route("/")
-def inicio():
-    return render_template("login.html")
-
-
-# VALIDAR LOGIN
-@app.route("/login", methods=["POST"])
-def login():
-
-    if request.method == "POST":
-        usuario = request.form.get("usuario")
-        password = request.form.get("password")
-
-        if usuario == "admin" and password == "123":
-            return redirect("/home")
-        else:
-            return "Usuario o contraseña incorrectos"
-    
-    return render_template("login.html")
-
 # PAGINA PRINCIPAL APP
-@app.route("/home")
+@app.route("/")
 def home():
     return render_template("index.html")
 # HISTORIAL DE VENTAS
