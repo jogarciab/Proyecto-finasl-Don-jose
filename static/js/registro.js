@@ -10,5 +10,5 @@ document.getElementById("registroForm").addEventListener("submit", function(e){
 
     alert("Cuenta creada correctamente");
 
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 });
