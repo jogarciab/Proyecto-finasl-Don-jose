@@ -17,13 +17,13 @@ body{
 /* CONTENEDOR PRINCIPAL */
 .login-container{
     width: 450px;
-    height: 95vh;
+    min-height: 95vh;
+    padding-bottom:40px;
     border: 3px solid #00a2ff;
     /* background-image: url("img/fondo.jpg"); */
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden;
 }
 
 /* LOGO */
@@ -92,8 +92,14 @@ body{
 
 /* CREAR CUENTA */
 .create-account{
-    margin-top: 90px;
+    margin-top: 50px;
     color: white;
     text-decoration: none;
     font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
+.create-account:hover{
+    text-decoration: underline;
 }

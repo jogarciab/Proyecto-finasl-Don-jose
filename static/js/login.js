@@ -12,7 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
 
         alert("Inicio de sesión exitoso");
 
-        window.location.href = "inicio.html";
+        window.location.href = "/index";
 
     }else{
 

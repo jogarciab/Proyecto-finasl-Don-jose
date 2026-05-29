@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
 </head>
 <body>
 
@@ -12,31 +12,33 @@
 
     <!-- Logo -->
     <div class="logo">
-      <img src="img/logo.png" alt="Logo"> 
+      <!-- <img src="{{ url_for('static', filename='img/logo.png') }}"> -->
     </div>
 
     <!-- Formulario -->
-    <form class="login-form" id ="LoginForm">
+    <form class="login-form" id="loginForm">
 
-      <input type="text" id="rol" placeholder="Rol">
+    <input type="text" id="usuario" placeholder="Rol">
 
-      <input type="password" id="contraseña" placeholder="Contraseña">
+    <input type="password" id="password" placeholder="Contraseña">
 
-      <a href="#" class="forgot-password">
+    <a href="#" class="forgot-password">
         ¿Olvidaste tu contraseña?
-      </a>
+    </a>
 
-      <button type="submit">
+    <button type="submit">
         Ingresar
-      </button>
+    </button>
 
-      <a href="#" class="create-account">
+    <a href="/registro" class="create-account">
         Crea tu cuenta presionando aquí
-      </a>
+    </a>
 
-    </form>
+</form>
 
   </div>
+
+  <script src="{{ url_for('static', filename='js/login.js') }}"></script>
 
 </body>
 </html>

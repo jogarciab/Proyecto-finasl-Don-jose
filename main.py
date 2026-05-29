@@ -5,7 +5,13 @@ app = Flask(__name__)
 # PAGINA PRINCIPAL APP
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("login.html")
+@app.route('/index')
+def index():
+    return render_template('index.html')
+@app.route("/registro")
+def registro():
+    return render_template("registro.html")
 # HISTORIAL DE VENTAS
 @app.route("/venta")
 def venta():
